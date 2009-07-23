@@ -1,0 +1,9 @@
+#!/bin/env lua
+
+package.path = package.path..";src/?.lua;spec/?.lua"
+
+require 'db_spec'
+require 'doc_spec'
+require 'helpers_spec'
+
+spec:report(true)
